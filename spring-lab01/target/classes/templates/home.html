@@ -1,0 +1,47 @@
+
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>Pierwszy projekt springowy</title>
+        <meta charset="UTF-8" />
+    </head>
+    <body>
+       
+        <h1>Przedstaw się ładnie:</h1>
+            <form action="/hello" method="post">
+                Imię: <input type="text" name="imie" />
+                Wiek: <input type="number" name="wiek" />
+            <input type="submit" value="Wyślij" />     
+            </form>     
+        <h1>Przedstaw się ładnie:</h1>
+            <form action="/dodajOsobe" method="post">
+                Imię: <input type="text" name="imie" />
+                Nazwisko: <input type="text" name="nazwisko" />
+                Wiek: <input type="number" name="wiek" />
+            <input type="submit" value="Wyślij" />     
+            </form>   
+        <h1> Kalkulator</h1>
+        <form action="/calculator" method="post">
+            x: <input type="number" name="x" />
+            y: <input type="number" name="y" />
+            <input type="submit" value="Wyślij" />    
+        </form>
+        <h1> Kalkulator rozszerzony</h1>
+        <form action="/calculatordwa" method="post">
+            x: <input type="number" name="x" />
+            y: <input type="number" name="y" />
+            <select name="operacja">
+                <option value="+">+</option>
+                <option value="-">-</option>
+                <option value="*">*</option>
+                <option value="/">/</option>
+            </select>
+            <input type="submit" value="Wyślij" />    
+        </form>
+        
+    </body>
+</html>
